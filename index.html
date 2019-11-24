@@ -1,468 +1,505 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html>
-
-<head>
-  <meta http-equiv="Content-Type" content="text/html; charset=US-ASCII">
-  <meta name="generator" content="HTML Tidy for Linux/x86 (vers 11 February 2007), see www.w3.org">
-  <meta name="keywords" content="Bhairav, Mehta, Robot, Learning, Reinforcement, Computer, Vision, Deep">
-  <meta name="description" content="About Bhairav Mehta">
-  <meta name="author" content="Bhairav Mehta">
-  <meta name="robots" content="index">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <style type="text/css">
-    /* Stolen from Jon Barron via Aayush */
-    
-    a {
-      color: #1772d0;
-      text-decoration: none;
-    }
-    a:focus,
-    a:hover {
-      color: #f09228;
-      text-decoration: none;
-    }
-    body,
-    td,
-    th {
-      font-family: 'Lato', Verdana, Helvetica, sans-serif;
-      font-size: 14px
-    }
-    strong {
-      font-family: 'Lato', Verdana, Helvetica, sans-serif;
-      font-size: 13px
-    }
-    heading {
-      font-family: 'Lato', Verdana, Helvetica, sans-serif;
-      font-size: 15px;
-      font-weight: 700
-    }
-  </style>
-  <title>Bhairav Mehta</title>
-</head>
-
-<body>
-  <table width="900" border="0" align="center" cellspacing="0" cellpadding="0">
-    <tbody>
-      <tr>
-        <td>
-          <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
-            <tbody>
-              <tr>
-                <td width="67%" valign="middle">
-                  <p align="center"><font size="6">Bhairav Mehta</font>
-                  </p>
-                  <div align=j ustify>
-                      <p>I am a <s>research intern</s> Master's student at Université de Montréal / <a href="https://mila.quebec/en/">Mila</a> under the supervision of <a href="http://people.csail.mit.edu/lpaull/">Liam Paull</a> and <a href="http://www.professeurs.polymtl.ca/christopher.pal/">Christopher Pal</a>, with a focus on reinforcement learning. I completed my undergraduate degree at the <a href="http://www.umich.edu">University of Michigan</a> where I studied Computer Science and Applied Math. At Michigan, my research projects under <a href="http://www.web.eecs.umich.edu/~baveja/">Satinder Singh</a> and <a href="https://droplab.engin.umich.edu/matthew-johnson-roberson">Matthew Johnson-Roberson</a> focused on hierarchical RL as well as robotic reinforcement learning. I spent a semester at the Jet Propulsion Laboratory, working
-                      full-time under <a href="https://www-robotics.jpl.nasa.gov/people/Larry_Matthies/">Larry H. Matthies</a> in the Computer Vision Group, and spent my last semester helping teach the Introduction to Machine Learning course at Michigan with <a href="https://www.cs.swarthmore.edu/~sindhu/">Sindhu Kutty</a>. I now help teach <a href="http://liampaull.ca/courses/duckietown/">Duckietown</a> at UdeM, and taught a custom, online class on <a href="https://www.cs.dartmouth.edu/~qliu/stein.html">Stein's Method in Machine Learning</a> as an inaugural <a href="http://fellowship.depthfirstlearning.com/">Depth First Learning Fellow</a>.
-                    </p>
-                    <p>My research interests are concentrated in multi-task learning. The field of multi-task learning has a lot of interesting avenues, such as robotic RL, curriculum learning, optimization of neural networks, and even differential geometry (all of which I am excitedly working on with collaborators). I also dabble in simulation, and am especially interested in differentiable simulation as a research field. I have started to take interns with strong interest in reinforcement learning, robotics, and NLP: if that sounds like you (and you'd like to visit Mila), please fill out <a href="https://forms.gle/BB5csPfhZ7zUEEgg9">this form</a>.
+    <script>
+        function bio() {
+          var x = document.getElementById("fullbio");
+          if (x.style.display === "none") {
+            x.style.display = "block";
+          } else {
+            x.style.display = "none";
+          }
+        }
+        
+        function research() {
+          var x = document.getElementById("research");
+          if (x.style.display === "none") {
+            x.style.display = "block";
+          } else {
+            x.style.display = "none";
+          }
+        }
+        
+        function startups() {
+          var x = document.getElementById("startups");
+          if (x.style.display === "none") {
+            x.style.display = "block";
+          } else {
+            x.style.display = "none";
+          }
+        }
+    </script>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=US-ASCII">
+        <meta name="generator" content="HTML Tidy for Linux/x86 (vers 11 February 2007), see www.w3.org">
+        <meta name="keywords" content="Bhairav, Mehta, Robot, Learning, Reinforcement, Computer, Vision, Deep">
+        <meta name="description" content="About Bhairav Mehta">
+        <meta name="author" content="Bhairav Mehta">
+        <meta name="robots" content="index">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style type="text/css">
+            /* Stolen from Jon Barron via Aayush */
+            a {
+            color: #1772d0;
+            text-decoration: none;
+            }
+            a:focus,
+            a:hover {
+            color: #f09228;
+            text-decoration: none;
+            }
+            body,
+            td,
+            th {
+            font-family: 'Lato', Verdana, Helvetica, sans-serif;
+            font-size: 14px
+            }
+            strong {
+            font-family: 'Lato', Verdana, Helvetica, sans-serif;
+            font-size: 13px
+            }
+            heading {
+            font-family: 'Lato', Verdana, Helvetica, sans-serif;
+            font-size: 15px;
+            font-weight: 700
+            }
+        </style>
+        <title>Bhairav Mehta</title>
+    </head>
+    <body>
+        <table width="900" border="0" align="center" cellspacing="0" cellpadding="0">
+        <tbody>
+            <tr>
+                <td>
+                    <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+                        <tbody>
+                            <tr>
+                                <td width="33%" valign="top"><img width="200" src="static/me.jpg">
+                                <td width="67%" valign="middle">
+                                    <p align="center"><font size="6">Bhairav Mehta</font>
+                                    </p>
+                                    <p>I am a <s>research intern</s> Master's student at Université de Montréal / <a href="https://mila.quebec/en/">Mila</a> under the supervision of <a href="http://people.csail.mit.edu/lpaull/">Liam Paull</a> and <a href="http://www.professeurs.polymtl.ca/christopher.pal/">Christopher Pal</a>. I work mostly on reinforcement learning, optimization, and multi-task learning of deep neural networks. Much of my work has applications to robotics. I am grateful for support from Mila, Université de Montréal, Duckietown, IVADO, Jane Street + Depth First Learning, and Vraj Youth. 
+                                    <br> 
+                                    <center><button onclick="bio()">Bio</button><button onclick="research()">Research</button><button onclick="startups()">Startups</button></center>
+                                      
+                                    <div align=justify id="fullbio" style="display:none">
+                                        <p>I completed my undergraduate degree at the <a href="http://www.umich.edu">University of Michigan</a> where I studied Computer Science and Applied Math. At Michigan, my research projects under <a href="http://www.web.eecs.umich.edu/~baveja/">Satinder Singh</a> and <a href="https://droplab.engin.umich.edu/matthew-johnson-roberson">Matthew Johnson-Roberson</a> focused on hierarchical RL as well as robotic reinforcement learning. I spent a semester at the Jet Propulsion Laboratory, working
+                                            full-time under <a href="https://www-robotics.jpl.nasa.gov/people/Larry_Matthies/">Larry H. Matthies</a> in the Computer Vision Group, and spent my last semester helping teach the Introduction to Machine Learning course at Michigan with <a href="https://www.cs.swarthmore.edu/~sindhu/">Sindhu Kutty</a>. I now help teach <a href="http://liampaull.ca/courses/duckietown/">Duckietown</a> at UdeM, and taught a custom, online class on <a href="https://www.cs.dartmouth.edu/~qliu/stein.html">Stein's Method in Machine Learning</a> as an inaugural <a href="http://fellowship.depthfirstlearning.com/">Depth First Learning Fellow</a>.
+                                        </p>
+                                    </div>
+                                    <div align=justify id="research" style="display:none">
+                                        <p> My research interests are concentrated in multi-task learning. The field of multi-task learning has a lot of interesting avenues, such as robotic RL, curriculum learning, optimization of neural networks, and even differential geometry (all of which I am excitedly working on with collaborators). I also dabble in simulation, and am especially interested in differentiable simulation as a research field. I have started to take interns with strong interest in reinforcement learning, robotics, and NLP: if that sounds like you (and you'd like to visit Mila), please fill out <a href="https://forms.gle/BB5csPfhZ7zUEEgg9">this form</a>.
+                                        </p>
+                                    </div>
+                                    <div align=justify id="startups" style="display:none">
+                                        <p>
+                                            In the past, I had cofounded an edtech startup named Project Chronicle. We were funded by
+                                            the <a href="https://www.eecs.umich.edu/cse/">University of Michigan CSE Department</a> and the <a href="http://www.1517fund.com/">1517 Fund</a>. I am now a co-founder of <a href="https://sites.google.com/view/qai/home">q&ai</a>, a <a href="https://www.creativedestructionlab.com/">Creative Destruction Lab</a>-backed startup uses deep learning and recommender systems to tackle some of the same problems.
+                                        </p>
+                                    </div>
+                                    <p>
+                                    </p>
+                                    </div>
+                                    <p align="center">
+                                        <style type=â€text/cssâ€>
+                                            p span.displaynone {
+                                            display: none;
+                                            }
+                                        </style>
+                                    <p align="center">Email: bhairavmehta95[AT]<span class=â€displaynoneâ€></span>gmail.com</p>
+                                    <p align="center">Github: <a href="https://github.com/bhairavmehta95">bhairavmehta95</a></p>
+                                </td>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <heading>Active Research Projects</heading>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+        <tbody>
+            <tr>
+                <td width="25%" valign="top">
+                    <div style="width: 200px; overflow: hidden">
+                    <img class="centered-and-cropped" src="static/180-360-humanoid.png"
+                        width='200' />
+                    <div style="width: 200px; overflow: hidden">
+                </td>
+                <td width="75%" valign="top">
+                    <p>
+                        <heading>Curriculum and Benchmarking in Meta-Reinforcement Learning</heading>
+                        <br><strong>Bhairav Mehta</strong>, <a href="https://mila.quebec/en/person/tristan-deleu/">Tristan Deleu</a>, <a href="https://sharathraparthy.github.io/">Sharath Chandra Raparthy</a>, <a href="http://www.professeurs.polymtl.ca/christopher.pal/">Christopher Pal</a>, <a href="http://liampaull.ca/">Liam Paull</a>
+                        <br>Submitted to <a href="https://aamas2020.conference.auckland.ac.nz">AAMAS 2020</a>
+                        <br> <a href="#">[Github: Coming Soon]</a><a href="#">[Arxiv: Coming Soon]</a>
                     </p>
                     <p>
-                      In the past, I had cofounded an edtech startup named Project Chronicle. We were funded by
-                      the <a href="https://www.eecs.umich.edu/cse/">University of Michigan CSE Department</a>                      and the <a href="http://www.1517fund.com/">1517 Fund</a>. I am now the lead PI on a <a href="https://sites.google.com/view/qai/home">Mila project (under the umbrella of their AI for Social Good initiative)</a> that uses machine learning to tackle some of the same problems.
+                        Can Meta-RL use curriculum learning? In this work, we explore that question and find that curriculum learning stabilizes meta-RL in complex navigation and locomotion tasks. We also highlight issues with Meta-RL benchmarks by highlighting failure cases when we vary task distributions.
                     </p>
-                    <p>I am grateful for support from Mila, Université de Montréal, Duckietown, IVADO, Jane Street + Depth First Learning, and Vraj Youth. 
-                    </p>
-              
-                  </div>
-                  <p align="center">
-                    <style type=â€text/cssâ€>
-                      p span.displaynone {
-                        display: none;
-                      }
-                    </style>
-                    <p align="center">Email: bhairavmehta95[AT]<span class=â€displaynoneâ€></span>gmail.com</p>
-                    <p align="center">Github: <a href="https://github.com/bhairavmehta95">bhairavmehta95</a></p>
-                    
+                    <br>
+                    <br>
                 </td>
-                <td width="33%"><img width="300" src="static/me.jpg">
-                </td>
-              </tr>
-            </tbody>
-          </table>
-          <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
-            <tbody>
-              <tr>
-                <td>
-                  <heading>Active Research Projects</heading>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-          <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
-            <tbody>
-              <tr>
+            </tr>
+        </tbody>
+        <tbody>
+            <tr>
                 <td width="25%" valign="top">
-                  <div style="width: 200px; overflow: hidden">
+                    <div style="width: 200px; overflow: hidden">
                     <img class="centered-and-cropped" src="static/adr.gif"
-                      width='200' />
+                        width='200' />
                     <div style="width: 200px; overflow: hidden">
                 </td>
                 <td width="75%" valign="top">
-                  <p>
-                    <heading>Active Domain Randomization</heading>
-                    <br><strong>Bhairav Mehta</strong>, <a href="https://mila.quebec/en/person/manfred-diaz/">Manfred Diaz</a>, <a href="https://mila.quebec/en/person/florian-golemo/">Florian Golemo</a>, <a href="http://www.professeurs.polymtl.ca/christopher.pal/">Christopher Pal</a>, <a href="http://liampaull.ca/">Liam Paull</a>
-                    <br><a href="https://www.robot-learning.org/">CoRL 2019</a>, <a href="http://rldm.org/">RLDM 2019</a>
-	            <br> <a href="https://github.com/montrealrobotics/active-domainrand">[Github]</a><a href="https://arxiv.org/abs/1904.04762">[Arxiv]</a>
-                  </p>
-                  <p>
-          We tackle the uniform sampling assumption in domain randomization and learn a randomization strategy, looking for the most informative environments. Our method shows significant improvements in agent performance, agent generalization, sample complexity, and interpretability over the traditional domain and dynamics randomization strategies. <br> <br>
-
-          In <a href="static/optimizationadr.pdf">ongoing work</a>, we're exploring <i>why</i> this works in practice. Using tools from optimization and dynamical systems, we're trying to decouple the time dependence between curriculum and neural network optimization. 
-                  </p>
-                  <br>
-                  <br>
+                    <p>
+                        <heading>Active Domain Randomization</heading>
+                        <br><strong>Bhairav Mehta</strong>, <a href="https://mila.quebec/en/person/manfred-diaz/">Manfred Diaz</a>, <a href="https://mila.quebec/en/person/florian-golemo/">Florian Golemo</a>, <a href="http://www.professeurs.polymtl.ca/christopher.pal/">Christopher Pal</a>, <a href="http://liampaull.ca/">Liam Paull</a>
+                        <br><a href="https://www.robot-learning.org/">CoRL 2019</a>, <a href="http://rldm.org/">RLDM 2019</a>
+                        <br> <a href="https://github.com/montrealrobotics/active-domainrand">[Github]</a><a href="https://arxiv.org/abs/1904.04762">[Arxiv]</a>
+                    </p>
+                    <p>
+                        We tackle the uniform sampling assumption in domain randomization and learn a randomization strategy, looking for the most informative environments. Our method shows significant improvements in agent performance, agent generalization, sample complexity, and interpretability over the traditional domain and dynamics randomization strategies. <br> <br>
+                        In <a href="static/optimizationadr.pdf">ongoing work</a>, we're exploring <i>why</i> this works in practice. Using tools from optimization and dynamical systems, we're trying to decouple the time dependence between curriculum and neural network optimization. 
+                    </p>
+                    <br>
+                    <br>
                 </td>
-              </tr>
-            </tbody>
-            <tbody>
-              <tr>
+            </tr>
+        </tbody>
+        <tbody>
+            <tr>
                 <td width="25%" valign="top">
-                  <div style="width: 200px; overflow: hidden">
+                    <div style="width: 200px; overflow: hidden">
                     <img class="centered-and-cropped" src="static/duckie.gif"
-                      width='200' />
+                        width='200' />
                     <div style="width: 200px; overflow: hidden">
                 </td>
                 <td width="75%" valign="top">
-                  <p>
-                    <heading>Duckietown</heading>
+                    <p>
+                        <heading>Duckietown</heading>
+                        <br>
+                    </p>
+                    <p>
+                        Outside of my research, I spend time working with <a href="https://www.duckietown.org/">Duckietown</a> (Check out our <a href="https://github.com/duckietown/gym-duckietown">simulator</a>). I also help out with setting up <a href="https://github.com/duckietown/sim-duckiebot-lanefollowing-demo">infra</a><a href="https://github.com/duckietown/challenge-aido1_LF1-baseline-duckietown">struct</a><a href="https://github.com/duckietown/challenge-aido1_LF1-baseline-RL-sim-pytorch">ure</a> for our <a href="https://nips.cc">NIPS 2018</a> and<a href="https://icra2019.org"> ICRA 2019</a> AI Driving Olympics (AIDO) competitions, and even sometimes do <a href="https://goo.gl/YFTjn3">video</a> <a href="https://bit.ly/2RdvJBh">tutorials</a>!
+                    </p>
                     <br>
-                  </p>
-                  <p>
-		  Outside of my research, I spend time working with <a href="https://www.duckietown.org/">Duckietown</a> (Check out our <a href="https://github.com/duckietown/gym-duckietown">simulator</a>). I also help out with setting up <a href="https://github.com/duckietown/sim-duckiebot-lanefollowing-demo">infra</a><a href="https://github.com/duckietown/challenge-aido1_LF1-baseline-duckietown">struct</a><a href="https://github.com/duckietown/challenge-aido1_LF1-baseline-RL-sim-pytorch">ure</a> for our <a href="https://nips.cc">NIPS 2018</a> and<a href="https://icra2019.org"> ICRA 2019</a> AI Driving Olympics (AIDO) competitions, and even sometimes do <a href="https://goo.gl/YFTjn3">video</a> <a href="https://bit.ly/2RdvJBh">tutorials</a>!
-                  </p>
-                  <br>
-                  <br>
+                    <br>
                 </td>
-              </tr>
-            </tbody>
-           <!--  <tbody>
-              <tr>
-                <td width="25%" valign="top">
+            </tr>
+        </tbody>
+        <!--  <tbody>
+            <tr>
+              <td width="25%" valign="top">
+                <div style="width: 200px; overflow: hidden">
+                  <img class="centered-and-cropped" src="static/optimized.gif"
+                    width='200' />
                   <div style="width: 200px; overflow: hidden">
-                    <img class="centered-and-cropped" src="static/optimized.gif"
-                      width='200' />
-                    <div style="width: 200px; overflow: hidden">
-                </td>
-                <td width="75%" valign="top">
-                  <p>
-
-                    <heading>Multiagent Robotic RL in Gazebo</heading>
-
-                    
-                    <br>
-                    <strong>Bhairav Mehta</strong>, <a href="https://droplab.engin.umich.edu/matthew-johnson-roberson">Matthew Johnson-Roberson</a>
-                    <br> Undergraduate Senior Thesis
-                    <br>
-                    <a href="https://docs.google.com/document/d/1MkmOTweVpad3GHcauW14mnaE1JG0_FTU29JVkp0ov9A/edit?usp=sharing">[Proposal]</a> <a href="#">[Github: Coming Soon!]</a>
-                  </p>
-                  <p>
-                    This project, building upon the work of
-                    <a href="https://github.com/erlerobot/gym-gazebo">Erle Robotics</a>, aims to give researchers the ability to train teams of robots
-                    in simulation using Gazebo, a more well known physics simulator
-                    (w.r.t robotics research). The project, with a modular interface
-                    to swap out RL algorithms, robots, and environments, aims to
-                    boost interest by providing a solution that does not require
-                    porting URDF models and rebuilding robot environments.
-                  </p>
+              </td>
+              <td width="75%" valign="top">
+                <p>
+            
+                  <heading>Multiagent Robotic RL in Gazebo</heading>
+            
+                  
                   <br>
+                  <strong>Bhairav Mehta</strong>, <a href="https://droplab.engin.umich.edu/matthew-johnson-roberson">Matthew Johnson-Roberson</a>
+                  <br> Undergraduate Senior Thesis
                   <br>
-                </td>
-              </tr>
+                  <a href="https://docs.google.com/document/d/1MkmOTweVpad3GHcauW14mnaE1JG0_FTU29JVkp0ov9A/edit?usp=sharing">[Proposal]</a> <a href="#">[Github: Coming Soon!]</a>
+                </p>
+                <p>
+                  This project, building upon the work of
+                  <a href="https://github.com/erlerobot/gym-gazebo">Erle Robotics</a>, aims to give researchers the ability to train teams of robots
+                  in simulation using Gazebo, a more well known physics simulator
+                  (w.r.t robotics research). The project, with a modular interface
+                  to swap out RL algorithms, robots, and environments, aims to
+                  boost interest by providing a solution that does not require
+                  porting URDF models and rebuilding robot environments.
+                </p>
+                <br>
+                <br>
+              </td>
+            </tr>
             </tbody> -->
-
-            <tbody>
-              <tr>
+        <tbody>
+            <tr>
                 <td width="25%" valign="top">
-                  <div style="width: 200px; overflow: hidden">
+                    <div style="width: 200px; overflow: hidden">
                     <a href="static/education.pdf">
                     <img class="centered-and-cropped" src="static/education-1.jpg" width='200' />
                     </a>
                 </td>
                 <td width="75%" valign="top">
-                  <p>
-                    <heading>A Scalable, Flexible Augmentation of the Student Education Process</heading>
-                    <br><b>Bhairav Mehta</b>, Adithya Ramanathan 
-		    <br><a href="https://aiforsocialgood.github.io/2018/cfp.htm">NIPS 2018 AI for Social Good Workshop</a>
-		    <br><a href="https://arxiv.org/abs/1810.09845">[Paper]</a><a href="https://docs.google.com/presentation/d/1XXCOMBnRqKdQTbjPNQrN7u8eQ1PI8-INHyF9PpntcMI/edit#slide=id.g46896b1dfa_0_612">[Slides]</a><a href="https://bluejeans.com/playback/s/SEQunbRtrx95koUJlwkXBmGEdgnQakIxuC8fzSdh702uJ9YAECmT29kvSJ2UZBKG">[Talk]</a>
-                    <br>
                     <p>
-                      We present a information retrieval approach to education and provide a end-to-end framework to go from raw text to a system where a student can learn about different topics such as History and Psychology, all while getting immediate feedback and recommendations on what to study from our system. 
+                        <heading>A Scalable, Flexible Augmentation of the Student Education Process</heading>
+                        <br><b>Bhairav Mehta</b>, Adithya Ramanathan 
+                        <br><a href="https://aiforsocialgood.github.io/2018/cfp.htm">NIPS 2018 AI for Social Good Workshop</a>
+                        <br><a href="https://arxiv.org/abs/1810.09845">[Paper]</a><a href="https://docs.google.com/presentation/d/1XXCOMBnRqKdQTbjPNQrN7u8eQ1PI8-INHyF9PpntcMI/edit#slide=id.g46896b1dfa_0_612">[Slides]</a><a href="https://bluejeans.com/playback/s/SEQunbRtrx95koUJlwkXBmGEdgnQakIxuC8fzSdh702uJ9YAECmT29kvSJ2UZBKG">[Talk]</a>
+                        <br>
+                    <p>
+                        We present a information retrieval approach to education and provide a end-to-end framework to go from raw text to a system where a student can learn about different topics such as History and Psychology, all while getting immediate feedback and recommendations on what to study from our system. 
                     </p>
                     <br>
                     <br>
                 </td>
-              </tr>
-            </tbody>
-            
-            <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
-              <tbody>
+            </tr>
+        </tbody>
+        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+            <tbody>
                 <tr>
-                  <td>
-                    <heading>Past Work and Startups</heading>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-            <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
-              <tbody>
-              <tr>
-                <td width="25%" valign="top">
-                  <div style="width: 200px; overflow: hidden">
-                    <img class="centered-and-cropped" src="static/hsr.png" width='200' />
-                    </a>
-                </td>
-                <td width="75%" valign="top">
-                  <p>
-                    <heading>Home Support Robotic Learning</heading>
-                    <br>Research under <a href="http://www.web.eecs.umich.edu/~baveja/">Satinder Singh</a>
-                    <br>
-                    <p>
-                      Aiming to train robots in simulation, I helped to develop agent environment code and DRL algorithms for a home support robot.
-                    </p>
-                    <br>
-                    <br>
-                </td>
-              </tr>
-            </tbody>
-
-              <tbody>
-              <tr>
-                <td width="25%" valign="top">
-                  <div style="width: 200px; overflow: hidden">
-                    <img class="centered-and-cropped" src="static/param.png" width='200' />
-                    </a>
-                </td>
-                <td width="75%" valign="top">
-                  <p>
-                    <heading>ICLR 2018 Reproducability Challenge</heading>
-                    <br>Class Project for EECS 498: Reinforcement Learning</a>
-                    <!-- <br>In Progress -->
-                    <br>
-                    <p>
-                      Aiming to reproduce the results in "Parameter Space Noise for Exploration," my team
-                      and I entered into the <a href="http://www.cs.mcgill.ca/~jpineau/ICLR2018-ReproducibilityChallenge.html">ICLR 2018 Reproducability Challenge</a>.
-                      Check out our final draft of the results <a href="https://drive.google.com/file/d/1twAjJktWVUORG-EWPa-GeqQDfqIP64bX/view?usp=sharing">here</a>.
-                    </p>
-                    <br>
-                    <br>
-                </td>
-              </tr>
-            </tbody>
-              <tbody>
-                <tr>
-                  <td width="25%" valign="top">
-                    <div style="width: 200px; overflow: hidden">
-                      <img class="centered-and-cropped" src="static/drone.gif" width='200' />
-
-                      <div style="width: 200px; overflow: hidden">
-                        </br>
-                  </td>
-                  <td width="75%" valign="top">
-                    <p>
-                      <heading>Perch and Stare: Autonomous Microaerial Vehicle Landing</heading>
-                      <br>Research under <a href="https://www-robotics.jpl.nasa.gov/people/Larry_Matthies/">Larry H. Matthies</a>                      at the <a href="https://www-robotics.jpl.nasa.gov/groups/ComputerVision/">JPL Computer Vision Group</a>
-                      <!--</a>-->
-                      <p>
-                        I helped develop the main pipeline that transformed monocular camera images from
-                        the MAV's camera into a elevation height map. To then evaluate
-                        the usefulness and safety of landing sites, we used metrics
-                        like elevation, flatness and clutter to rank landing site
-                        candidates, and then used the quadcopter's motor controllers
-                        to autonomously land the vehicle.
-                      </p>
-                      <br>
-                      <br>
-                  </td>
-                </tr>
-              </tbody>
-              <tbody>
-                <tr>
-                  <td width="25%" valign="top">
-                    <div style="width: 200px; overflow: hidden">
-                      <img class="centered-and-cropped" src="static/rest.png" width='200' />
-
-                      <div style="width: 200px; overflow: hidden">
-                        </br>
-                  </td>
-                  <td width="75%" valign="top">
-                    <p>
-                      <a href="https://rest.engin.umich.edu/">
-                        <heading>Robotic Exploration of Space Team</heading>
-                      </a>
-                      <br>Project Team advised by <a href="https://april.eecs.umich.edu/people/ebolson/">Edwin Olson</a>
-
-                      <!--</a>-->
-                      <br>
-                      <a href="https://www.youtube.com/watch?v=KGpG1ZgEVZs">Video</a>
-                      <p>My main project team at Michigan, I developed software features
-                        such as localization, teleoperation, and odometry using C++
-                        and ROS for an autonomous mining rover, which we utilized
-                        during the <a href="https://www.nasa.gov/offices/education/centers/kennedy/technology/nasarmc.html">Robotic Mining Competition</a>.</p>
-                      <br>
-                      <br>
-                  </td>
-                </tr>
-              </tbody>
-              <tbody>
-                <tr>
-
-                  <td width="25%" valign="top">
-                    <div style="width: 200px; overflow: hidden">
-                      <img class="centered-and-cropped" src="static/pc.png" width='200' />
-
-                      <div style="width: 200px; overflow: hidden">
-                        </br>
-                  </td>
-                  </td>
-                  <td width="75%" valign="top">
-                    <p>
-
-                      <heading>Project Chronicle</heading>
-
-                      <!--</a>-->
-                      <br>
-
-                      <p>There is no opportunity as big as education. It is an opportunity
-                        to make life-long learners; to excite students about the
-                        world; and to create explorers, scientists, entrepreneurs,
-                        entertainers, and engineers. But most students dread school.
-                        Many don't find relevance in their classes and many find
-                        their knowledge useless. Our mission at Project Chronicle
-                        is to empower those students with the ownership of stories
-                        and enhance their learning through the power of speech. </p>
-
-                      <p>Project Chronicle has students record their telling of a prompted
-                        topic. Our platform analyzes the student's response and give
-                        immediate feedback on both the accuracy and delivery of the
-                        content. The application both challenges the students to
-                        understand the material at a much deeper level than required
-                        by typical homework and leaves them with stories they can
-                        easily remember and share. It gives them confidence. It gives
-                        them comprehension. It gives them a voice.</p>
-                      <br>
-                      <br>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-            <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
-              <tbody>
-                <tr>
-                  <td>
-                    <heading>Teaching</heading>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-            <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
-              <tbody>
-                <tr>
-                  <td width="25%" valign="top">
-                    <div style="width: 200px; overflow: hidden">
-                      <img class="centered-and-cropped" src="static/mich.jpg" width='200' />
-
-                      <div style="width: 200px; overflow: hidden">
-                        </br>
-                  </td>
-                  <td width="75%" valign="top">
-                    <p>
-                      <heading>EECS 445: Introduction to Machine Learning</heading>
-                      <br>Winter 2018
-                      <p>
-                        <a href="https://drive.google.com/open?id=1e63sMBV4qIaUVx6AjkGgNovM2XJml49l">Some supplemental notes I have been writing for the class.</a>
-                      </p>
-                      <br>
-                      <br>
-                  </td>
-                </tr>
-              </tbody>
-
-              <tbody>
-                <tr>
-                  <td width="25%" valign="top">
-                    <div style="width: 200px; overflow: hidden">
-                      <img class="centered-and-cropped" src="static/udem.png" width='200' />
-
-                      <div style="width: 200px; overflow: hidden">
-                        </br>
-                  </td>
-                  <td width="75%" valign="top">
-                    <p>
-                      <heading>IFT 6757: Autonomous Vehicles (Duckietown)</heading>
-                      <br>Fall 2018
-                      <p>
-                      I help teach <a href="https://www.duckietown.org/instructors/classes/educational-resources">Duckietown</a> at UdeM, assisting with student projects and <a href="https://github.com/duckietown-udem/udem-fall19-public/">instructional exercises</a>.
-                      </p>
-                      <br>
-                      <br>
-                  </td>
-                </tr>
-              </tbody>
-
-              <tbody>
-                <tr>
-                  <td width="25%" valign="center">
-                    <div style="width: 200px; overflow: hidden">
-                      <img class="centered-and-cropped" src="static/dfl.jpg" width='150' />
-
-                      <div style="width: 200px; overflow: hidden">
-                        </br>
-                  </td>
-                  <td width="75%" valign="top">
-                    <p>
-                      <heading>Depth First Learning: Stein's Method in Machine Learning</heading>
-                      <br>Winter / Summer 2019
-                      <p>
-                      As an inaugural <a href="https://twitter.com/DepthFirstLearn/status/1122956414094278663">Depth First Learning Fellow</a> I created a curriculum to help understand the use of <a href="https://en.wikipedia.org/wiki/Stein%27s_method">Stein's Method</a> in Machine Learning, an <a href="https://steinworkshop.github.io/">increasingly popular method</a> in the Machine / Deep / Reinforcement Learning communities.
-                      </p>
-                      <br>
-                      <br>
-                  </td>
-                </tr>
-              </tbody>
-
-              <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
-                <tbody>
-                  <tr>
                     <td>
-                      <heading>Mentorship</heading>
+                        <heading>Past Work and Startups</heading>
                     </td>
-                  </tr>
-                </tbody>
-              </table>
-              <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
-                <tbody>
-                  <tr>
+                </tr>
+            </tbody>
+        </table>
+        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+            <tbody>
+                <tr>
+                    <td width="25%" valign="top">
+                        <div style="width: 200px; overflow: hidden">
+                        <img class="centered-and-cropped" src="static/hsr.png" width='200' />
+                        </a>
+                    </td>
                     <td width="75%" valign="top">
-                      <p>
-                        <heading>I'm always excited to work with smart people.</heading>
-                        <br>Here's a few folks I've been lucky to work with. <a href="https://forms.gle/BB5csPfhZ7zUEEgg9">Interested?</a>
                         <p>
-                          <a href="https://nishantnikhil.github.io/">Nishant Nikhil</a> - Summer 2019 Intern (Mila): Education and NLP <br>
-                          <a href="https://github.com/mirraaj">Rohan Raj</a> - Summer 2019 Intern (Mila): Reinforcement Learning Theory <br>
-                          <a href="https://sharathraparthy.github.io/sharath-home/">Sharath Chandra Raparthy</a> - Summer 2019 Intern (Mila): RL + Robotics, Sim2Real Transfer
+                            <heading>Home Support Robotic Learning</heading>
+                            <br>Research under <a href="http://www.web.eecs.umich.edu/~baveja/">Satinder Singh</a>
+                            <br>
+                        <p>
+                            Aiming to train robots in simulation, I helped to develop agent environment code and DRL algorithms for a home support robot.
                         </p>
                         <br>
                         <br>
                     </td>
-                  </tr>
-                </tbody>
-
-              <table width="100%" align="center" border="0" cellspacing="0" cellpadding="00">
-                <tbody>
-                  <tr>
-                    <td>
-                      <br>
+                </tr>
+            </tbody>
+            <tbody>
+                <tr>
+                    <td width="25%" valign="top">
+                        <div style="width: 200px; overflow: hidden">
+                        <img class="centered-and-cropped" src="static/param.png" width='200' />
+                        </a>
                     </td>
-                  </tr>
+                    <td width="75%" valign="top">
+                        <p>
+                            <heading>ICLR 2018 Reproducability Challenge</heading>
+                            <br>Class Project for EECS 498: Reinforcement Learning</a>
+                            <!-- <br>In Progress -->
+                            <br>
+                        <p>
+                            Aiming to reproduce the results in "Parameter Space Noise for Exploration," my team
+                            and I entered into the <a href="http://www.cs.mcgill.ca/~jpineau/ICLR2018-ReproducibilityChallenge.html">ICLR 2018 Reproducability Challenge</a>.
+                            Check out our final draft of the results <a href="https://drive.google.com/file/d/1twAjJktWVUORG-EWPa-GeqQDfqIP64bX/view?usp=sharing">here</a>.
+                        </p>
+                        <br>
+                        <br>
+                    </td>
+                </tr>
+            </tbody>
+            <tbody>
+                <tr>
+                    <td width="25%" valign="top">
+                        <div style="width: 200px; overflow: hidden">
+                        <img class="centered-and-cropped" src="static/drone.gif" width='200' />
+                        <div style="width: 200px; overflow: hidden">
+                        </br>
+                    </td>
+                    <td width="75%" valign="top">
+                        <p>
+                            <heading>Perch and Stare: Autonomous Microaerial Vehicle Landing</heading>
+                            <br>Research under <a href="https://www-robotics.jpl.nasa.gov/people/Larry_Matthies/">Larry H. Matthies</a>                      at the <a href="https://www-robotics.jpl.nasa.gov/groups/ComputerVision/">JPL Computer Vision Group</a>
+                            <!--</a>-->
+                        <p>
+                            I helped develop the main pipeline that transformed monocular camera images from
+                            the MAV's camera into a elevation height map. To then evaluate
+                            the usefulness and safety of landing sites, we used metrics
+                            like elevation, flatness and clutter to rank landing site
+                            candidates, and then used the quadcopter's motor controllers
+                            to autonomously land the vehicle.
+                        </p>
+                        <br>
+                        <br>
+                    </td>
+                </tr>
+            </tbody>
+            <tbody>
+                <tr>
+                    <td width="25%" valign="top">
+                        <div style="width: 200px; overflow: hidden">
+                        <img class="centered-and-cropped" src="static/rest.png" width='200' />
+                        <div style="width: 200px; overflow: hidden">
+                        </br>
+                    </td>
+                    <td width="75%" valign="top">
+                        <p>
+                            <a href="https://rest.engin.umich.edu/">
+                                <heading>Robotic Exploration of Space Team</heading>
+                            </a>
+                            <br>Project Team advised by <a href="https://april.eecs.umich.edu/people/ebolson/">Edwin Olson</a>
+                            <!--</a>-->
+                            <br>
+                            <a href="https://www.youtube.com/watch?v=KGpG1ZgEVZs">Video</a>
+                        <p>My main project team at Michigan, I developed software features
+                            such as localization, teleoperation, and odometry using C++
+                            and ROS for an autonomous mining rover, which we utilized
+                            during the <a href="https://www.nasa.gov/offices/education/centers/kennedy/technology/nasarmc.html">Robotic Mining Competition</a>.
+                        </p>
+                        <br>
+                        <br>
+                    </td>
+                </tr>
+            </tbody>
+            <tbody>
+                <tr>
+                    <td width="25%" valign="top">
+                        <div style="width: 200px; overflow: hidden">
+                        <img class="centered-and-cropped" src="static/pc.png" width='200' />
+                        <div style="width: 200px; overflow: hidden">
+                        </br>
+                    </td>
+                    </td>
+                    <td width="75%" valign="top">
+                        <p>
+                            <heading>Project Chronicle</heading>
+                            <!--</a>-->
+                            <br>
+                        <p>There is no opportunity as big as education. It is an opportunity
+                            to make life-long learners; to excite students about the
+                            world; and to create explorers, scientists, entrepreneurs,
+                            entertainers, and engineers. But most students dread school.
+                            Many don't find relevance in their classes and many find
+                            their knowledge useless. Our mission at Project Chronicle
+                            is to empower those students with the ownership of stories
+                            and enhance their learning through the power of speech. 
+                        </p>
+                        <p>Project Chronicle has students record their telling of a prompted
+                            topic. Our platform analyzes the student's response and give
+                            immediate feedback on both the accuracy and delivery of the
+                            content. The application both challenges the students to
+                            understand the material at a much deeper level than required
+                            by typical homework and leaves them with stories they can
+                            easily remember and share. It gives them confidence. It gives
+                            them comprehension. It gives them a voice.
+                        </p>
+                        <br>
+                        <br>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+            <tbody>
+                <tr>
+                    <td>
+                        <heading>Teaching</heading>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+        <tbody>
+            <tr>
+                <td width="25%" valign="top">
+                    <div style="width: 200px; overflow: hidden">
+                    <img class="centered-and-cropped" src="static/mich.jpg" width='200' />
+                    <div style="width: 200px; overflow: hidden">
+                    </br>
+                </td>
+                <td width="75%" valign="top">
+                    <p>
+                        <heading>EECS 445: Introduction to Machine Learning</heading>
+                        <br>Winter 2018
+                    <p>
+                        <a href="https://drive.google.com/open?id=1e63sMBV4qIaUVx6AjkGgNovM2XJml49l">Some supplemental notes I have been writing for the class.</a>
+                    </p>
+                    <br>
+                    <br>
+                </td>
+            </tr>
+        </tbody>
+        <tbody>
+            <tr>
+                <td width="25%" valign="top">
+                    <div style="width: 200px; overflow: hidden">
+                    <img class="centered-and-cropped" src="static/udem.png" width='200' />
+                    <div style="width: 200px; overflow: hidden">
+                    </br>
+                </td>
+                <td width="75%" valign="top">
+                    <p>
+                        <heading>IFT 6757: Autonomous Vehicles (Duckietown)</heading>
+                        <br>Fall 2018
+                    <p>
+                        I help teach <a href="https://www.duckietown.org/instructors/classes/educational-resources">Duckietown</a> at UdeM, assisting with student projects and <a href="https://github.com/duckietown-udem/udem-fall19-public/">instructional exercises</a>.
+                    </p>
+                    <br>
+                    <br>
+                </td>
+            </tr>
+        </tbody>
+        <tbody>
+            <tr>
+                <td width="25%" valign="center">
+                    <div style="width: 200px; overflow: hidden">
+                    <img class="centered-and-cropped" src="static/dfl.jpg" width='150' />
+                    <div style="width: 200px; overflow: hidden">
+                    </br>
+                </td>
+                <td width="75%" valign="top">
+                    <p>
+                        <heading>Depth First Learning: Stein's Method in Machine Learning</heading>
+                        <br>Winter / Summer 2019
+                    <p>
+                        As an inaugural <a href="https://twitter.com/DepthFirstLearn/status/1122956414094278663">Depth First Learning Fellow</a> I created a curriculum to help understand the use of <a href="https://en.wikipedia.org/wiki/Stein%27s_method">Stein's Method</a> in Machine Learning, an <a href="https://steinworkshop.github.io/">increasingly popular method</a> in the Machine / Deep / Reinforcement Learning communities.
+                    </p>
+                    <br>
+                    <br>
+                </td>
+            </tr>
+        </tbody>
+        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+            <tbody>
+                <tr>
+                    <td>
+                        <heading>Mentorship</heading>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+            <tbody>
+                <tr>
+                    <td width="75%" valign="top">
+                        <p>
+                            <heading>I'm always excited to work with smart people.</heading>
+                            <br>Here's a few folks I've been lucky to work with. <a href="https://forms.gle/BB5csPfhZ7zUEEgg9">Interested?</a>
+                        <p>
+                            <a href="https://nishantnikhil.github.io/">Nishant Nikhil</a> - Summer 2019 Intern (Mila): Education and NLP <br>
+                            <a href="https://github.com/mirraaj">Rohan Raj</a> - Summer 2019 Intern (Mila): Reinforcement Learning Theory <br>
+                            <a href="https://sharathraparthy.github.io/sharath-home/">Sharath Chandra Raparthy</a> - Summer 2019 Intern (Mila): RL + Robotics, Sim2Real Transfer
+                        </p>
+                        <br>
+                        <br>
+                    </td>
+                </tr>
+            </tbody>
+            <table width="100%" align="center" border="0" cellspacing="0" cellpadding="00">
+                <tbody>
+                    <tr>
+                        <td>
+                            <br>
+                        </td>
+                    </tr>
                 </tbody>
-              </table>
-        </td>
-      </tr>
-    </tbody>
-    </table>
-</body>
-<a href='https://people.eecs.berkeley.edu/~barron/'>Source stolen from here</a>
-
+            </table>
+            </td>
+            </tr>
+            </tbody>
+        </table>
+    </body>
+    <a href='https://people.eecs.berkeley.edu/~barron/'>Source stolen from here</a>
 </html>
